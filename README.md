@@ -13,7 +13,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 Then, clone this repository and build the project:
 ```
-git clone https://github.com/yourusername/repository-name.git
+git clone [https://github.com/yourusername/repository-name.git](https://github.com/exiton0x/decrypt_v20_chrome_cookies)
 cd repository-name
 cargo build --release
 ```
