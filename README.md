@@ -72,10 +72,7 @@ let _ = Command::new("taskkill")
 ```
 
 ## 📥 Installation
-Make sure you have **Rust** installed. If not, you can install it via this website [rust](https://www.rust-lang.org/fr/tools/install):       
-```
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-```
+Make sure you have **Rust** installed. If not, you can install it via this website [rust](https://www.rust-lang.org/fr/tools/install)
 Then, clone this repository and build the project:
 ```
 git clone https://github.com/bypass_v20_chrome_cookies
