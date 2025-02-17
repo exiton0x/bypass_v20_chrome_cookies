@@ -51,7 +51,7 @@ let resp = reqwest::blocking::get(format!("http://localhost:{}/json", port_debug
 let ws_url = json[0]["webSocketDebuggerUrl"].as_str().unwrap().to_string();
 ```
 
-- **Retrieve Cookies**: Send a command to fetch all cookies via WebSocket.
+- **Connects to websocket and Send datas to retrieve Cookies**: Send a command to fetch all cookies via WebSocket.
 ```rust
 let (mut socket, _) = connect(ws_url)?;
 let data = serde_json::json!({ "id": 1, "method": "Network.getAllCookies" });
