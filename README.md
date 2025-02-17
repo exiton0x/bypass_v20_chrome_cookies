@@ -56,3 +56,6 @@ Or use the compiled binary:
 target/release/
 ```
 
+## 🎉 Acknowledgments
+- Inspired by various open-source **Chrome cookie** retrieval projects.
+
