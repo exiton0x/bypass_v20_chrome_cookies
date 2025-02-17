@@ -1,5 +1,6 @@
 ## bypass_v20_chrome_cookies
 🚀 This repository **is a simple Rust project** for retrieving **Chrome v20 cookies.**
+No **admin rights are required** to run the app. So this can be interesting for creating **malware**. 
 
 ## 📌 Features
 - Retrieve cookies v20 from **Chrome Debugger**
