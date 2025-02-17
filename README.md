@@ -7,7 +7,18 @@
 - **Easy** to use
 
 ## 🛠️ How It Works
-This project uses **Rust** to retrieve **Chrome v20 cookies** by accessing the browser's cookie storage files. Here are the main steps:
+This project uses **Rust** to retrieve **Chrome v20 cookies** using chrome debugging. Here are the main steps:
+- Launches the Chrome Debugger :
+```
+let _ = Command::new(path_chrome)
+        .arg(format!("--remote-debugging-port={}", port_debugging))
+        .arg("--remote-allow-origins=*")
+        .arg("--headless")
+        .arg(format!("--user-data-dir={}", path_user))
+        .stdout(Stdio::null()) 
+        .stderr(Stdio::null())
+        .spawn()?;
+```
 
 ## 📥 Installation
 Make sure you have **Rust** installed. If not, you can install it via this website [rust](https://www.rust-lang.org/fr/tools/install):       
