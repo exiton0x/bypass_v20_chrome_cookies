@@ -18,7 +18,6 @@ let _ = Command::new(path_chrome)
             .stdout(Stdio::null()) 
             .stderr(Stdio::null())
             .spawn()?;
-```
 
 ## 📥 Installation
 Make sure you have **Rust** installed. If not, you can install it via this website [rust](https://www.rust-lang.org/fr/tools/install):       
