@@ -45,7 +45,7 @@ let _ = Command::new(path_chrome)
             .spawn()?;
 ```
 
-- **Connect to Debugging Interface**: Use ```reqwest``` to retrieve the ```webSocketDebuggerUrl``` for WebSocket communication.
+- **Get the value of ```webSocketDebuggerUrl```**: Use ```reqwest``` to retrieve the ```webSocketDebuggerUrl``` for WebSocket communication.
 ```rust
 let resp = reqwest::blocking::get(format!("http://localhost:{}/json", port_debugging))?;
 let ws_url = json[0]["webSocketDebuggerUrl"].as_str().unwrap().to_string();
