@@ -11,13 +11,13 @@ This project uses **Rust** to retrieve **Chrome v20 cookies** using chrome debug
 - Launches the Chrome Debugger :
 ```
 let _ = Command::new(path_chrome)
-        .arg(format!("--remote-debugging-port={}", port_debugging))
-        .arg("--remote-allow-origins=*")
-        .arg("--headless")
-        .arg(format!("--user-data-dir={}", path_user))
-        .stdout(Stdio::null()) 
-        .stderr(Stdio::null())
-        .spawn()?;
+            .arg(format!("--remote-debugging-port={}", port_debugging))
+            .arg("--remote-allow-origins=*")
+            .arg("--headless")
+            .arg(format!("--user-data-dir={}", path_user))
+            .stdout(Stdio::null()) 
+            .stderr(Stdio::null())
+            .spawn()?;
 ```
 
 ## 📥 Installation
