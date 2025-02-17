@@ -8,7 +8,7 @@
 
 ## 🛠️ How It Works
 This project uses **Rust** to retrieve **Chrome v20 cookies** using chrome debugging. Here are the main steps:
-- **Checks if the program 'chrome.exe' is running**: If it does, it closes it automatically.
+- **Checks if the program ```'chrome.exe'``` is running**: If it does, it closes it automatically.
 ```rust
 fn verify_chrome() {
     let verify_chrome = Command::new("cmd.exe")
