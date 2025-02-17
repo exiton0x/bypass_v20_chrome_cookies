@@ -7,6 +7,6 @@
 - Easy to use
 
 # Installation
-Make sure you have **Rust** installed. If not, you can install it via this website: [rust](https://www.rust-lang.org/fr/tools/install)
+Make sure you have **Rust** installed. If not, you can install it via this website [rust](https://www.rust-lang.org/fr/tools/install):
 ```curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh```
 
