@@ -1,2 +1,2 @@
 # decrypt_v20_chrome_cookies
-Ce référentiel est un simple projet Rust permettant de récupérer les cookies Chrome v20.
+This repository is a simple Rust project for retrieving Chrome v20 cookies.
