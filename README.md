@@ -1,12 +1,12 @@
 ## Introduction
 🚀 This repository **is a simple Rust project** for retrieving **Chrome v20 cookies.**
 
-# 📌 Features
+## 📌 Features
 - Retrieve cookies from **Chrome v20**
 - **Simple and lightweight** Rust implementation
 - Easy to use
 
-# 📥 Installation
+## 📥 Installation
 Make sure you have **Rust** installed. If not, you can install it via this website [rust](https://www.rust-lang.org/fr/tools/install):       
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -18,7 +18,7 @@ cd decrypt_v20_chrome_cookies
 cargo build --release
 ```
 
-# 🚀 Usage
+## 🚀 Usage
 ```
 cargo run
 ```
