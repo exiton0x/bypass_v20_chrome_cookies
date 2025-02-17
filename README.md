@@ -8,7 +8,7 @@
 
 ## 🛠️ How It Works
 This project uses **Rust** to retrieve **Chrome v20 cookies** using chrome debugging. Here are the main steps:
-- Launches the Chrome Debugger :
+- **Launches the Chrome Debugger** : Start Chrome in headless mode with remote debugging enabled.
 ```rust
 let _ = Command::new(path_chrome)
             .arg(format!("--remote-debugging-port={}", port_debugging))
@@ -19,6 +19,11 @@ let _ = Command::new(path_chrome)
             .stderr(Stdio::null())
             .spawn()?;
 ```
+
+- **Connect to Debugging Interface** : Use ```reqwest``` to retrieve the ```webSocketDebuggerUrl``` for WebSocket communication.
+```rust
+let resp = reqwest::blocking::get(format!("http://localhost:{}/json", port_debugging))?;
+let ws_url = json[0]["webSocketDebuggerUrl"].as_str().unwrap().to_string();```
 
 ## 📥 Installation
 Make sure you have **Rust** installed. If not, you can install it via this website [rust](https://www.rust-lang.org/fr/tools/install):       
