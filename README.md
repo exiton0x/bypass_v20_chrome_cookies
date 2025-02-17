@@ -4,7 +4,7 @@
 ## 📌 Features
 - Retrieve cookies from **Chrome v20**
 - **Simple and lightweight** Rust implementation
-- Easy to use
+- **Easy** to use
 
 ## 🛠️ How It Works
 This project uses **Rust** to retrieve **Chrome v20 cookies** by accessing the browser's cookie storage files. Here are the main steps:
